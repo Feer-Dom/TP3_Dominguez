@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
         <div>
 
-            <label class="text-primary">Seguro que desea eliminar el articulo?</label>
+            <label class="text-primary">Seguro que desea eliminar el articulo <% = Request.QueryString["Name"] %>?</label>
             <asp:Button CssClass="btn btn-primary" Text="Aceptar" runat="server" ID="btnAceptar" OnClick="btnAceptar_Click" />
             <asp:Button CssClass="btn btn-danger" Text="Cancelar" runat="server" ID="btnCancelar" OnClick="btnCancelar_Click" />
 
